@@ -10,11 +10,17 @@ import {
   GsapTo,
   Home,
 } from "./pages";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import HighLights from "./components/HighLights";
 
 const App = () => {
   return (
     <div className="bg-black min-h-screen w-full">
-      <Router>
+      <Navbar />
+      <Hero/>
+      <HighLights/>
+      {/* <Router>
         <Routes>
           <Route path="/gsapto" element={<GsapTo />} />
           <Route path="/gsapfrom" element={<GsapFrom />} />
@@ -25,7 +31,7 @@ const App = () => {
           <Route path="/gsaptext" element={<GsapText />} />
           <Route path="/" element={<Home />} />
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 };
